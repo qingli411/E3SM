@@ -252,6 +252,9 @@ add_default($nl, 'configure_cvmix_kpp_minimum_OBL_under_sea_ice');
 add_default($nl, 'config_cvmix_kpp_stop_OBL_search');
 add_default($nl, 'config_cvmix_kpp_use_enhanced_diff');
 add_default($nl, 'config_cvmix_kpp_nonlocal_with_implicit_mix');
+add_default($nl, 'config_cvmix_kpp_use_theory_wave');
+add_default($nl, 'config_cvmix_kpp_langmuir_mixing_opt');
+add_default($nl, 'config_cvmix_kpp_langmuir_entrainment_opt');
 
 ###########################
 # Namelist group: forcing #
