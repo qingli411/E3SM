@@ -212,6 +212,13 @@ add_default($nl, 'config_cvmix_kpp_use_theory_wave');
 add_default($nl, 'config_cvmix_kpp_langmuir_mixing_opt');
 add_default($nl, 'config_cvmix_kpp_langmuir_entrainment_opt');
 
+#########################
+# Namelist group: gotm #
+#########################
+
+add_default($nl, 'config_use_gotm');
+add_default($nl, 'config_gotm_namelist_file')
+
 ##############################
 # Namelist group: vmix_const #
 ##############################

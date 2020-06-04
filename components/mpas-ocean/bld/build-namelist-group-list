@@ -17,6 +17,7 @@ my @groups = qw(run_modes
                 hmix_del4_tensor
                 rayleigh_damping
                 cvmix
+                gotm
                 vmix_const
                 vmix_rich
                 vmix

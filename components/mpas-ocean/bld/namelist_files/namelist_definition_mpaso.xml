@@ -17,7 +17,7 @@
           An abbreviation of the fortran declaration for the variable.
       Valid declarations are:
 
-          char*n  
+          char*n
           integer
           logical
           real
@@ -31,7 +31,7 @@
      input_pathname
           Only include this attribute to indicate that the variable
           contains the pathname of an input dataset that resides in the
-          CESM inputdata directory tree.  
+          CESM inputdata directory tree.
 
       The recognized values are "abs" to indicate that an absolute
           pathname is required, or "rel:var_name" to indicate that the
@@ -1010,6 +1010,24 @@ Valid values: NONE, LWF16, LF17, RWHGK16
 Default: Defined in namelist_defaults.xml
 </entry>
 
+<!-- gotm -->
+
+<entry id="config_use_gotm" type="logical"
+	category="gotm" group="gotm">
+If true, use the General Ocean Turbulence Model to compute vertical diffusivity and viscosity
+
+Valid values: True or False
+Default: Defined in namelist_defaults.xml
+</entry>
+
+<entry id="config_gotm_namelist_file" type="char*1024"
+	category="gotm" group="gotm">
+File name of the GOTM turbulence namelist
+
+Valid values: File name or absolute path of the namelist file
+Default: Defined in namelist_defaults.xml
+</entry>
+
 
 <!-- vmix_const -->
 
@@ -1233,7 +1251,7 @@ Default: Defined in namelist_defaults.xml
 
 <entry id="config_sw_absorption_type" type="char*1024"
 	category="shortwaveRadiation" group="shortwaveRadiation">
-Name of shortwave absorption type used in simulation. 
+Name of shortwave absorption type used in simulation.
 
 Valid values: 'jerlov' or 'ohlmann00' or 'none'
 Default: Defined in namelist_defaults.xml
